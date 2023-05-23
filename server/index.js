@@ -32,6 +32,10 @@ app.post('/cookie', async (req, res) => {
   }
 });
 
+app.get('/',async(req,res)=>{
+  res.status(200).json(true);
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
